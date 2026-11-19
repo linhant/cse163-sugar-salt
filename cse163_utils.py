@@ -12,7 +12,7 @@ import pandas as pd
 TOLERANCE = 0.001
 
 
-def assert_equals(expected, received) -> None:
+def assert_equals(expected: object, received: object) -> None:
     """
     Checks that received equals expected and raises an AssertionError that
     shows both values if it does not. Floats are compared with a small
@@ -44,3 +44,5 @@ def assert_equals(expected, received) -> None:
     else:
         assert expected == received, \
             f'Expected {expected} but received {received}'
+
+
