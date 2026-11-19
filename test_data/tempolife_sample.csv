@@ -1,0 +1,10 @@
+id,name,brand,category,calories,protein,carbs,fat,fiber,sugar,saturated_fat,salt,source
+1,"Cereals ready-to-eat, POST, GOLDEN CRISP",,Hommikusöögid,380,6,88,1,1,52,0.2,0.4,usda_sr_legacy
+2,"Cereals, oats, regular, dry",,Hommikusöögid,380,13,68,7,10,1,1.2,0.01,usda_sr_legacy
+3,"Cereals, oats, regular, cooked with water",,Hommikusöögid,70,2.5,12,1.5,1.7,0.3,0.3,0.1,usda_sr_legacy
+4,"Beef, short loin, t-bone steak, USDA choice, cooked",,Liha ja linnuliha,270,25,0,18,0,,7,0.15,usda_sr_legacy
+5,"McDONALD'S, french fries",,Valmistoidud,320,3.4,43,15,4,0.2,2.3,0.6,usda_sr_legacy
+6,Berry jam,,Eesti toidud,248,0.4,62.4,0.1,1.2,0,,,
+7,"Pasta, dry",,Teravili ja pasta,371,13,75,1.5,3.2,2.7,0.3,0.015,usda_sr_legacy
+8,"Pasta, dry",,Teravili ja pasta,371,13,75,1.5,3.2,2.7,0.3,0.015,usda_sr_legacy
+9,"Soup, chicken broth cubes, dry",,Supid,267,17,18,14,0,,3.5,60,usda_sr_legacy
