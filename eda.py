@@ -12,6 +12,7 @@ import os
 
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 
 import data_processing as dp
 
@@ -139,7 +140,7 @@ def comparison_label(df: pd.DataFrame) -> pd.Series:
     return df['group'].str.capitalize() + ' (' + df['dataset'] + ')'
 
 
-def save_figure(fig, name: str) -> None:
+def save_figure(fig: go.Figure, name: str) -> None:
     """
     Saves the Plotly figure fig to figures/ as an interactive HTML file
     and as a PNG image, both called name.
@@ -199,8 +200,8 @@ def plot_box(df: pd.DataFrame, value_column: str, color_column: str,
     category gets its own panel and y-axis so small and large values are
     both readable. Hovering over an outlier shows the food's name.
     """
-    present = [c for c in CATEGORY_ORDER
-               if c in set(df['food_category'].dropna())]
+    categories_in_data = set(df['food_category'].dropna())
+    present = [c for c in CATEGORY_ORDER if c in categories_in_data]
     fig = px.box(df.dropna(subset=[value_column]), x=color_column,
                  y=value_column, color=color_column, facet_col='food_category',
                  facet_col_wrap=5, facet_row_spacing=0.12,
